@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyPulse Weather Forecast</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #0f172a;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1.5px, transparent 1.5px);
+      background-repeat: repeat;
+      background-position: top left;
+      background-attachment: fixed;
+      background-size: 24px 24px;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .weather-card {
+      width: 100%;
+      max-width: 540px;
+      border-radius: 20px;
+      padding: 1.75rem;
+      background: linear-gradient(135deg, #1d4ed8 0%, #0ea5e9 100%);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .current-weather {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .temp {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .condition {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      margin-top: 0.35rem;
+    }
+
+    .sun-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+    
+    
+      animation: floatPulse 3s ease-in-out infinite;
+     
+    }
+
+    @keyframes floatPulse {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+      }
+      50% {
+        transform: translateY(-6px) scale(1.06);
+      }
+    }
+
+    .forecast-section h2 {
+      font-size: 1.15rem;
+      margin-bottom: 0.85rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      padding-bottom: 0.5rem;
+    }
+
+    .forecast-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.65rem;
+    }
+
+    .forecast-item {
+      background: rgba(15, 23, 42, 0.28);
+      border-radius: 12px;
+      padding: 0.75rem 0.5rem;
+      text-align: center;
+    }
+
+    .forecast-item .day {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .forecast-item .high-low {
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SkyPulse Weather</h1>
+  </header>
+
+  <main class="weather-card">
+    <section class="current-weather" aria-label="Current weather">
+      <div>
+        <div class="temp">29°C</div>
+        <div class="condition">Sunny &amp; Clear</div>
+      </div>
+      <div class="sun-icon" role="img" aria-label="Animated sun icon"></div>
+    </section>
+
+    <section class="forecast-section" aria-label="Upcoming forecast">
+     
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+<style>
+.weather-card {
+  width: 320px;
+  padding: 24px;
+  border-radius: 16px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+}
+
+
+.weather-icon {
+  font-size: 64px;
+  display: inline-block;
+
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+
+.forecast-section {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.1));
+}
+
+
+
+
+.forecast-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+</style>
