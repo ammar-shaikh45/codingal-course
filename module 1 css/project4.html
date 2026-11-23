@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice & Flame Bistro — Menu</title>
+  <style>
+   
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #faf6f0;
+      color: #2c241e;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    
+    .menu-card {
+      max-width: 750px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+      position: relative;
+    }
+
+    
+    header {
+      text-align: center;
+      border-bottom: 2px solid #e0d5c8;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+  
+    .restaurant-name {
+      font-size: 2.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8b261d;
+      text-shadow: 2px 2px 4px rgba(139, 38, 29, 0.25);
+      margin: 0 0 8px 0;
+    }
+
+  
+    .tagline {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #5c4d42;
+      text-decoration: underline wavy #c87d55;
+      margin: 0;
+    }
+
+
+    .special-offer {
+      background-color: #fff3cd;
+      border: 2px dashed #d39e00;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transform: rotate(-1.2deg);
+    }
+
+    .special-offer h2 {
+      margin: 0 0 5px 0;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: #856404;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+   
+    .old-price {
+      text-decoration: line-through;
+      color: #888888;
+      margin-right: 8px;
+    }
+
+    .new-price {
+      font-weight: bold;
+      color: #8b261d;
+      font-size: 1.15rem;
+    }
+
+    
+    .menu-section {
+      background-color: #fdfbf7;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    
+    .section-title {
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #3d2c20;
+      border-bottom: 1px solid #d8cbb8;
+      padding-bottom: 6px;
+      margin-top: 0;
+    }
+
+   
+    .dish-item {
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      transition: transform 0.25s ease, background-color 0.25s ease;
+    }
+
+    .dish-item:hover {
+      transform: translateX(8px) scale(1.01);
+      background-color: #f5ede2;
+    }
+
+    .dish-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .dish-name {
+      font-weight: bold;
+      font-size: 1.15rem;
+      color: #2c241e;
+    }
+
+    .dish-price {
+      font-weight: bold;
+      color: #8b261d;
+    }
+
+    .dish-description {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #55483e;
+      text-indent: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="menu-card">
+   
+    <header>
+      <h1 class="restaurant-name">Spice &amp; Flame Bistro</h1>
+  
+    </header>
+
+   
+    <section class="special-offer">
+      <h2>Weekend Chef's Special</h2>
+      <p>
+        Three-Course Tasting Platter — 
+      
+      </p>
+    </section>
+
+    <section class="menu-section">
+      <h2 class="section-title">Starters &amp; Small Plates</h2>
+
+      <article class="dish-item">
+        <div class="dish-header">
+         
+        </div>
+        <p class="dish-description">
+          Char-grilled sourdough topped with roasted heirloom tomatoes, fresh basil leaves, aged balsamic glaze, and extra-virgin olive oil.
+        </p>
+      </article>
+
+      <article class="dish-item">
+        <div class="dish-header">
+         
+        </div>
+        <p class="dish-description">
+          Marinated cottage cheese cubes seared over open flames and served alongside a cooling mint-coriander yogurt dip.
+        </p>
+      </article>
+    </section>
+
+   
+    <section class="menu-section">
+      <h2 class="section-title">Main Courses</h2>
+
+      <article class="dish-item">
+        <div class="dish-header">
+        
+        </div>
+        <p class="dish-description">
+          Creamy Arborio rice slow-cooked with wild forest mushrooms, shaved parmesan cheese, and a drizzle of aromatic white truffle oil.
+        </p>
+      </article>
+
+      <article class="dish-item">
+        <div class="dish-header">
+         
+        </div>
+        <p class="dish-description">
+          Pan-seared fillet coated in rosemary and thyme breadcrumbs, accompanied by garlic mashed potatoes and lemon butter sauce.
+        </p>
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>

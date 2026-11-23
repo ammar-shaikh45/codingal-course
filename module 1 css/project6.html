@@ -1,0 +1,71 @@
+<h1>Simple Calculator</h1>
+
+<p id="add"></p>
+<p id="subtract"></p>
+<p id="multiply"></p>
+<p id="divide"></p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Button Calculator</title>
+</head>
+<body>
+
+  <h1>Simple Calculator</h1>
+
+  <!-- Input boxes for the two numbers -->
+  <input type="number" id="num1" placeholder="First number">
+  <input type="number" id="num2" placeholder="Second number">
+  <br><br>
+
+  <!-- Buttons that trigger each calculation -->
+  <button onclick="calculate('add')">Add (+)</button>
+  <button onclick="calculate('subtract')">Subtract (-)</button>
+  <button onclick="calculate('multiply')">Multiply (*)</button>
+  <button onclick="calculate('divide')">Divide (/)</button>
+
+  <!-- Area to display the result -->
+  <p id="result">Result will appear here</p>
+
+  <script>
+    function calculate(operation) {
+      // Get the values from the input boxes and convert them to numbers
+      var n1 = Number(document.getElementById("num1").value);
+      var n2 = Number(document.getElementById("num2").value);
+      var answer;
+
+      // Perform the chosen calculation
+      if (operation === "add") {
+        answer = n1 + n2;
+      } else if (operation === "subtract") {
+        answer = n1 - n2;
+      } else if (operation === "multiply") {
+        answer = n1 * n2;
+      } else if (operation === "divide") {
+        answer = n2 !== 0 ? n1 / n2 : "Cannot divide by zero";
+      }
+
+      // Show the result on the page
+      document.getElementById("result").innerHTML = "Result: " + answer;
+    }
+  </script>
+
+</body>
+</html>
+
+<script>
+var num1 = 10;
+var num2 = 2;
+
+
+var add = num1 + num2;
+var subtract = num1 - num2;
+var multiply = num1 * num2;
+var divide = num1 / num2;
+
+
+document.getElementById("add").innerHTML = "The added value is: " + add;
+document.getElementById("subtract").innerHTML = "The subtracted value is: " + subtract;
+document.getElementById("multiply").innerHTML = "The multiplied value is: " + multiply;
+document.getElementById("divide").innerHTML = "The divided value is: " + divide;
+</script>

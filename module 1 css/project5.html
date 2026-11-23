@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Scoops Ice Cream Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #d6336c;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+  
+    h1 + p {
+      font-size: 1.1rem;
+      color: #555;
+      text-align: center;
+      background-color: #ffe3ec;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+
+    h1 + p::first-letter {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #d6336c;
+    }
+
+    h2 {
+      color: #862e9c;
+      border-bottom: 2px solid #f3d9fa;
+      padding-bottom: 5px;
+    }
+
+    .flavour-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .flavour-list > li {
+      background-color: #ffffff;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #eee;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+  
+    .flavour-list ul {
+      margin-top: 8px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    
+    .flavour-list > li:nth-child(3) {
+      background-color: #fff3bf;
+      border: 2px solid #fcc419;
+      font-weight: bold;
+    }
+
+    .flavour-list > li:nth-child(3)::after {
+      
+      
+      font-size: 0.9rem;
+      margin-left: 8px;
+    }
+
+
+    .flavour-list > li:hover {
+      background-color: #fff0f6;
+      transform: translateX(5px);
+      cursor: pointer;
+    }
+
+    .order-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .order-btn:hover {
+      background-color: #a61e4d;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+
+  <h1>🍦 Sweet Scoops Ice Cream</h1>
+
+
+  <p>Welcome to Sweet Scoops! Every batch is handcrafted daily using fresh local cream, real fruit, and rich Belgian chocolate.</p>
+
+  <h2>Our Flavours</h2>
+
+  
+  <ul class="flavour-list">
+    <li>
+      Classic Vanilla Bean — ₹120
+      <ul>
+        <li>Topping suggestion: Hot fudge &amp; roasted almonds</li>
+      </ul>
+    </li>
+    <li>Belgian Dark Chocolate — ₹150</li>
+    <li> Alphonso Mango Sorbet — ₹160</li>
+    <li>Salted Caramel Crunch — ₹150</li>
+    <li>Roasted Pistachio — ₹170</li>
+  </ul>
+
+  <button class="order-btn">Place Your Order</button>
+
+</body>
+</html>
