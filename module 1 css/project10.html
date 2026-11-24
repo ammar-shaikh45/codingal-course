@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Club Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>School Clubs Hub</h1>
+    <p>Explore activities, join a team, and build new skills.</p>
+  </header>
+
+  <main class="tablet-frame">
+    <section class="bento-grid">
+
+      <article class="tile tile-sun">
+        <div class="circle-sun"></div>
+      </article>
+
+ 
+      <article class="tile tile-stripes"></article>
+
+     
+      <article class="tile tile-ui-top">
+        <div class="search-bar">
+          <span class="dot"></span>
+          <span class="line"></span>
+        </div>
+        <div class="mini-bars">
+          <span></span>
+          <span></span>
+        </div>
+      </article>
+
+  
+      <article class="tile tile-rainbow">
+        <div class="arc"></div>
+      </article>
+
+
+      <article class="tile tile-art">
+        <div class="planet"></div>
+        <h2>Art Club</h2>
+      </article>
+
+
+      <article class="tile tile-space">
+        <span class="star s1">✦</span>
+        <span class="star s2">✦</span>
+        <h2>Astronomy</h2>
+      </article>
+
+   
+      <article class="tile tile-robotics">
+        <div class="gear">⚙</div>
+        <h2>Robotics</h2>
+      </article>
+
+    
+      <article class="tile tile-grid-pattern"></article>
+
+      <article class="tile tile-plaid"></article>
+    </section>
+  </main>
+</body>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #a8ece0;
+
+  background-size: 24px 24px;
+  color: #1e293b;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.site-header p {
+  color: #334155;
+  margin-top: 0.25rem;
+}
+/
+.tablet-frame {
+  width: 100%;
+  max-width: 780px;
+  background: #fdf6e9;
+  border: 4px solid #334155;
+  border-radius: 28px;
+  padding: 18px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+}
+
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(75px, auto);
+  gap: 8px;
+  background: #334155;
+  border: 3px solid #334155;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.tile {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.tile:hover {
+  filter: brightness(1.04);
+}
+
+.tile h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-top: 6px;
+  z-index: 1;
+}
+
+
+.tile-sun {
+  grid-column: span 3;
+  grid-row: span 2;
+  background: #67c3f3;
+}
+
+.circle-sun {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #facc15 55%, #ffffff 55%);
+  border: 3px solid #334155;
+}
+
+.tile-stripes {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: repeating-linear-gradient(
+    90deg,
+    #38bdf8,
+    #38bdf8 6px,
+    #1e3a8a 6px,
+    #1e3a8a 12px
+  );
+}
+
+.tile-ui-top {
+  grid-column: span 5;
+  grid-row: span 2;
+  background: #93c5fd;
+  gap: 10px;
+}
+
+.search-bar {
+  width: 90%;
+  height: 26px;
+  background: #ffffff;
+  border: 2px solid #334155;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.search-bar .line {
+  width: 65%;
+  height: 4px;
+  background: #94a3b8;
+  border-radius: 2px;
+}
+
+.search-bar .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #38bdf8;
+  border: 1.5px solid #334155;
+}
+
+.mini-bars {
+  display: flex;
+  gap: 8px;
+  width: 90%;
+}
+
+.mini-bars span {
+  flex: 1;
+  height: 16px;
+  background: #dbeafe;
+  border: 2px solid #334155;
+  border-radius: 4px;
+}
+
+.tile-rainbow {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: #fde047;
+}
+
+.arc {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 8px solid #f472b6;
+  box-shadow: inset 0 0 0 6px #38bdf8, inset 0 0 0 12px #a78bfa;
+}
+
+.tile-art {
+  grid-column: span 3;
+  grid-row: span 2;
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.planet {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fde047, #fb7185, #818cf8);
+  border: 2.5px solid #1e293b;
+}
+
+.tile-space {
+  grid-column: span 3;
+  grid-row: span 2;
+  background: #4338ca;
+  color: #ffffff;
+}
+
+.star {
+  color: #fde047;
+  font-size: 1.1rem;
+}
+
+.tile-robotics {
+  grid-column: span 3;
+  grid-row: span 2;
+  background: #fda4af;
+}
+
+.gear {
+  font-size: 2rem;
+  color: #334155;
+}
+
+.tile-grid-pattern {
+  grid-column: span 3;
+  grid-row: span 3;
+  background-color: #fbcfe8;
+  background-image: linear-gradient(#f472b6 1px, transparent 1px),
+    linear-gradient(90deg, #f472b6 1px, transparent 1px);
+  background-size: 14px 14px;
+</style>
+</html>
